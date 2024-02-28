@@ -1,0 +1,11 @@
+.heading {
+    color: brown;
+    background-color: gray;
+    padding: 20px;
+}
+
+.heading-orange {
+    color: white;
+    background-color: orange;
+
+}
