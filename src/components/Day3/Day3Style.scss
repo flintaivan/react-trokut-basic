@@ -1,69 +1,81 @@
 .blog-container {
-    max-width: 1024px;
-    margin: 50px auto;
+    margin: 20px 50px 0;
     background-color: #FAFAFA;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #7FDBDA;
-    border-radius: 4px;
-}
-.nav {
-    color: #fff;
-    padding: 8px 16px;
-}
-.logo {
-    padding: 8px 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 24px;
-}
-.links-ul {
-    display: flex;
-    font-weight: bold;
-    list-style-type: none;
-}
-.link {
-    padding: 8px;
-}
-
-.main-tag {
-    margin: 20px 0;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-}
-.sidebar {
-    border-radius: 4px;
-    margin-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8px;
-    width: 30%;
-    max-width: calc(30% - 36px);
-    background-color: #FEBF63;
 }
 
-
-.main-content {
-    padding: 8px 20px;
-    border-radius: 4px;
-    width: 70%;
-    max-width: calc(70% - 40px);
-    background-color: #ADE498;
-}
-.footer {
-    color: white;
-    padding: 32px;
-    border-radius: 4px;
+.navbar, .footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
     background-color: #7FDBDA;
     border-radius: 4px;
+    color: #fff;
+    width: 100%;
+}
+
+.navbar {
+    .nav {
+        display: flex;
+        align-items: center;
+
+        .links-ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+
+            .link {
+                padding: 0 8px;
+            }
+        }
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+}
+
+.main-tag {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+    margin: 20px 0;
+
+    .main-content, .sidebar {
+        border-radius: 4px;
+        padding: 20px;
+        margin-right: 20px;
+    }
+
+    .main-content {
+        flex: 1;
+        background-color: #ADE498;
+    }
+
+    .sidebar {
+        flex: 0 0 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FEBF63;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
 }

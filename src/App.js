@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Day3Component from './components/Day3/Day3Component';
+import { PropComponent } from './components/Day3/PropComponent'; 
 
 
 
@@ -13,10 +14,24 @@ function App() {
   // END BUSINESS LOGIC
    
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
         <Day3Component />
-      </header>
+        <PropComponent 
+          itemObject={{
+              title: 'Title', 
+              subtitle: 'Subtitle', 
+              username: 'user'
+            }}
+          title={'Title from props'} 
+          subtitle={'Some subtitle'} 
+          username={'user'}
+        />
+
+        <PropComponent
+          title={'This is another title'}
+          subtitle={'Another subtitle'}
+          username={'Another username'}
+        />
     </div>
   );
 }

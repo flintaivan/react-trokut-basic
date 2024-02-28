@@ -1,8 +1,9 @@
 import './Day3Style.scss'
-const FooterComponent = () => {
+const FooterComponent = (props) => {
+    // console.log(props.content.content)
     return (
         <footer className='footer'>
-            Footer
+            {props.content.content}
         </footer>
     )
 }
