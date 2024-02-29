@@ -8,6 +8,7 @@
 
 .navbar, .footer {
     display: flex;
+    max-width: 900px;
     justify-content: space-between;
     padding: 20px;
     background-color: #7FDBDA;
@@ -43,6 +44,7 @@
 }
 
 .main-tag {
+    max-width: 900px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;

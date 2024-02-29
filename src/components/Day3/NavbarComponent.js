@@ -1,7 +1,7 @@
 import './Day3Style.scss'
 
 const NavbarComponent = (props) => {
-    console.log(props.content.navigation)
+    // console.log(props.content.navigation)
     return (
         <div className="navbar">
             <div className="logo">{props.content.logo}</div>
