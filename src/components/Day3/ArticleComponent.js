@@ -14,12 +14,17 @@ const ArticleComponent = (props) => {
     }
 
     // console.log(content)
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(props.currentArticle)
     const [disablePrev, setDisablePrev] = useState(true)
     const [disableNext, setDisableNext] = useState(false)
     let articleNumber = counter + 1
 
-    const nextArticle = () => {
+    // update counter whenever props.currentArticle changes
+    useEffect(() => {
+        setCounter(props.currentArticle)
+    }, [props.currentArticle])
+
+    const nextArticle = () => { 
         if(counter < content.length - 1) {
             setCounter(counter + 1)
             setDisableNext(false)
@@ -28,6 +33,7 @@ const ArticleComponent = (props) => {
             setDisableNext(true)
         }
     }
+
     // console.log(content.length)
     // console.log(content)
     const prevArticle = () => {
