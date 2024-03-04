@@ -3,7 +3,7 @@ import { userData } from './userData'
 
 const StateExampleComponent = () => {
 
-    console.log("user Data =>", userData)
+    // console.log("user Data =>", userData)
 
     const initialGreeting = 'Hello guest'
     const [greeting, setGreeting] = useState(initialGreeting)
