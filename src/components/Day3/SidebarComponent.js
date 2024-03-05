@@ -14,6 +14,7 @@ const SidebarComponent = (props) => {
                             onClick={(e) => {
                                 e.preventDefault()
                                 props.articleChange(index)
+                                // console.log(index)
                             }}
                             key={index}
                         >
